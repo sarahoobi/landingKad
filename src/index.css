@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .mini-icon {
+    width: 12.5px;
+    height: 14px;
+    fill: #f82ba9;
+    cursor: pointer;
+    transition: fill 1s;
+    display: inline-block;
+  }
+
+  .top-header-right-side li {
+    transition: fill 1s;
+    transition: color 1s;
+  }
+  .nav-icon {
+    width: 20px;
+    height: 20px;
+    fill: #f82ba9;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    5% {
+      transform: translateX(0);
+    }
+    8% {
+      transform: translateX(0);
+    }
+    10% {
+      transform: translateX(-100%);
+    }
+    15% {
+      transform: translateX(-100%);
+    }
+    20% {
+      transform: translateX(-100%);
+    }
+    25% {
+      transform: translateX(-200%);
+    }
+    30% {
+      transform: translateX(-200%);
+    }
+    35% {
+      transform: translateX(-200%);
+    }
+    40% {
+      transform: translateX(-300%);
+    }
+    45% {
+      transform: translateX(-300%);
+    }
+    50% {
+      transform: translateX(-300%);
+    }
+    55% {
+      transform: translateX(0);
+    }
+    60% {
+      transform: translateX(0);
+    }
+    65% {
+      transform: translateX(-100%);
+    }
+    70% {
+      transform: translateX(-100%);
+    }
+    75% {
+      transform: translateX(-100%);
+    }
+    78% {
+      transform: translateX(-200%);
+    }
+    80% {
+      transform: translateX(-200%);
+    }
+    85% {
+      transform: translateX(-200%);
+    }
+    90% {
+      transform: translateX(-300%);
+    }
+    95% {
+      transform: translateX(-300%);
+    }
+    96% {
+      transform: translateX(0);
+    }
+    98% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(-300%);
+    }
+  }
+
+  .animate-load {
+    animation: fadeIn 2s ease-out 0.3s;
+    animation-fill-mode: forwards;
+  }
+  .animate-loadH {
+    animation: fadeIn 2s ease-out 0.3s;
+    animation-fill-mode: forwards;
+  }
+  .animate-loadP {
+    animation: fadeIn 2s ease-out 0.3s;
+    animation-fill-mode: forwards;
+  }
+  .specialGift:hover .animate-gifti {
+    animation: fadeIn 0.5s ease-in 0.1s;
+    animation-fill-mode: forwards;
+  }
+}
