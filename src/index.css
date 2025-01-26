@@ -10,6 +10,7 @@
     cursor: pointer;
     transition: fill 1s;
     display: inline-block;
+    color: #f82ba9;
   }
 
   .top-header-right-side li {

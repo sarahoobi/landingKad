@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./index-shop-singel.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/flowbite/**/*.js",
+  ],
   theme: {
     extend: {
       transitionDelay: {
@@ -85,5 +90,5 @@ module.exports = {
     },
   },
 
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };
