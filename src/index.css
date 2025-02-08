@@ -1,3 +1,5 @@
+@import "flowbite/dist/flowbite.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -28,6 +30,60 @@
   .scrollbar-hide {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+  }
+  .giftPicsBox:hover .sliderControlsBox {
+    display: flex !important;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .shopList:hover .shop-sub {
+    display: block;
+    opacity: 1;
+  }
+  .helpPage:hover .helpPageSub {
+    display: block;
+    opacity: 1;
+  }
+  .blogPage:hover .blogPageSub {
+    display: block;
+    opacity: 1;
+  }
+  .accountPage:hover .accountPageSub {
+    display: block;
+    opacity: 1;
+  }
+  .pagesPage:hover .pagesPageSub {
+    display: block;
+    opacity: 1;
+  }
+  /* Hide the radio buttons */
+  input[type="radio"].hidden {
+    display: none;
+  }
+  .bg-dark-overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("./images/shop-banner.jpg");
+  }
+  #first-color-checkbox:checked {
+    background-color: #606ddd !important;
+    border-color: transparent !important;
+  }
+  #second-color-checkbox:checked {
+    background-color: #4caf50 !important;
+    border-color: transparent !important;
+  }
+  #third-color-checkbox:checked {
+    background-color: #17a2b8 !important;
+    border-color: transparent !important;
+  }
+  #fourth-color-checkbox {
+    background-color: #ffc107 !important;
+    border-color: transparent !important;
+  }
+  #fifth-color-checkbox {
+    background-color: #f44336 !important;
+    border-color: transparent !important;
   }
 
   @keyframes slide {
@@ -117,6 +173,16 @@
       transform: translateY(-300%);
     }
   }
+  @keyframes showUp {
+    0% {
+      opacity: 0;
+      transform: translateY(100%) translateX(40%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(-150%) translateX(40%);
+    }
+  }
 
   .animate-load {
     animation: fadeIn 2s ease-out 0.3s;
@@ -132,6 +198,10 @@
   }
   .specialGift:hover .animate-gifti {
     animation: fadeIn 0.5s ease-in 0.1s;
+    animation-fill-mode: forwards;
+  }
+  .relatedItemsWrap:hover .animate-showOption {
+    animation: showUp 0.5s ease-in 0.1s;
     animation-fill-mode: forwards;
   }
 }

@@ -2,7 +2,12 @@
 module.exports = {
   content: [
     "./index.html",
-    "./index-shop-singel.html",
+    "./index-cart.html",
+    "./index-help.html",
+    "./index-shop-checkout.html",
+    "./index-shop-checkout-complete.html",
+    "./index-grid-shop-2.html",
+    "./index-single-shop.html",
     "./src/**/*.{js,ts,jsx,tsx}",
     "./node_modules/flowbite/**/*.js",
   ],
