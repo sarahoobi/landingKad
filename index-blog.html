@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="./src/index.css">
+    <title>blog single</title>
+</head>
+
+<body>
+    <div class="header-top bg-bs_pink px-2 py-2 md:px-0" id="top">
+        <div
+            class="container text-sm font-semibold text-bs_textColor sm:flex sm:justify-between items-center text-center my-1">
+            <div class="support">
+                <a href="#" title="email-icon" class="pr-2 lg:pr-6">
+                    <i
+                        class="fa-regular fa-envelope text-bs_primary rounded-full mini-icon  hover:text-bs_textColor"></i>
+                    <span class="hover:text-bs_primary"> info@Kadooyab.com </span>
+                </a>
+                <a href="#" title="phone-number" class="pr-2 lg:pr-6">
+                    <svg class="mini-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M256 80C141.1 80 48 173.1 48 288l0 104c0 13.3-10.7 24-24 24s-24-10.7-24-24L0 288C0 146.6 114.6 32 256 32s256 114.6 256 256l0 104c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-104c0-114.9-93.1-208-208-208zM80 352c0-35.3 28.7-64 64-64l16 0c17.7 0 32 14.3 32 32l0 128c0 17.7-14.3 32-32 32l-16 0c-35.3 0-64-28.7-64-64l0-64zm288-64c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-16 0c-17.7 0-32-14.3-32-32l0-128c0-17.7 14.3-32 32-32l16 0z" />
+                    </svg>
+                    <span class="align-middle font-bold text-xs hover:text-bs_primary">021 28 42 68 73</span>
+                </a>
+                <a href="#" title="help" class="hidden lg:inline-block md:pr-2 lg:pr-6">
+                    <svg class="mini-icon hover:fill-bs_black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm169.8-90.7c7.9-22.3 29.1-37.3 52.8-37.3l58.3 0c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24l0-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1l-58.3 0c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+                    </svg>
+                    <span class=" align-middle hover:text-bs_primary">Need Help?</span>
+                </a>
+            </div>
+            <ul class="top-header-right-side flex my-4 md:my-0 justify-center md:justify-end">
+                <li class=" hover:text-bs_primary px-2 ">
+                    <a href="#" title="drop-down">
+                        <svg class="mini-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M352 96l64 0c17.7 0 32 14.3 32 32l0 256c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0c53 0 96-43 96-96l0-256c0-53-43-96-96-96l-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32zm-9.4 182.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L242.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l210.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
+                        </svg>
+                        <span class="align-middle px-1">Login</span>
+                    </a>
+                </li>
+                <li class="fill-bs_black hover:text-bs_primary px-1 ">
+                    <a href="#" title="drop-down">
+                        <i class="fa-solid fa-dollar-sign mini-icon"></i>
+                        <span class="align-middle px-1">USD</span>
+                        <i class="fa-solid fa-sort-down mini-icon"></i>
+                    </a>
+                </li>
+                <li class="hover:text-bs_primary px-2">
+                    <a href="#" title="drop-down">
+                        <i class="fa-solid fa-earth-americas mini-icon items-center"></i>
+                        <span class="align-middle px-1">EN</span>
+                        <i class="fa-solid fa-sort-down mini-icon"></i>
+                    </a>
+                </li>
+                <li class="hidden md:block md:mx-1 lg:mx-2">
+                    <span class="md:px-1 lg:px-2">Follow Us:</span>
+                    <a href="#" title="facebook-icon">
+                        <i class="fa-brands fa-facebook-f mini-icon text-bs_primary"></i>
+                    </a>
+                </li>
+                <li class="hidden md:block md:mx-1 lg:mx-2">
+                    <a href="#" title="instagram-icon mini-icon">
+                        <i class="fa-brands fa-instagram text-bs_primary"></i>
+                    </a>
+                </li>
+                <li class="hidden md:block md:mx-1 lg:mx-2">
+                    <a href="#" title="twitter-icon mini-icon">
+                        <i class=" fa-brands fa-x-twitter text-bs_primary"></i>
+                    </a>
+                </li>
+                <li class="hidden md:block md:ml-1 lg:ml-2">
+                    <a href="#" title="linkedin-icon">
+                        <i class="fa-brands fa-linkedin-in mini-icon"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!----Header-->
+
+    <header class="sticky z-40 top-0 bg-bs_white">
+
+        <nav class="container flex align-middle justify-between items-center py-6">
+            <a href="#">
+                <img src="./src/images/logo-pink.png" class="w-24 md:w-36 lg:w-40" alt="logo-menu">
+            </a>
+            <ul class="flex items-center lg:text-base lg:font-semibold ">
+                <li
+                    class="hidden lg:block lg:px-2 cursor-pointer transition-colors duration-500 delay-300 hover:text-bs_primary hover:fill-bs_primary">
+                    <a href="./index.html" title="home">
+                        Home
+                    </a>
+                    <a href="#"> <i class="fa-solid fa-chevron-down mini-icon"></i>
+                    </a>
+                </li>
+                <li
+                    class="hidden lg:block lg:px-2 cursor-pointer transition-colors duration-500 delay-300 hover:text-bs_primary ">
+                    <a href="#" title="category" class=" ">All Category
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                </li>
+                <li
+                    class="hidden lg:block lg:px-2 cursor-pointer transition-colors duration-500 delay-300 hover:text-bs_primary">
+                    <a href="#" title="about">
+                        About
+                    </a>
+                </li>
+                <li
+                    class="relative pagesPage hidden lg:block lg:px-2 cursor-pointer transition-colors duration-500 delay-300 hover:text-bs_primary">
+                    <a href="#" title="pages">Pages
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <div
+                        class="pagesPageSub opacity-0 hidden shop-sub absolute top-15 -right-20 z-20 bg-bs_white rounded-xl shadow-md w-52 p-6">
+                        <ul class="pb-3 text-bs_textColor capitalize">
+                            <li class="py-2 hover:text-bs_primary"><a href="./index-help.html"
+                                    title="dashboard">dashboard</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary capitalize"><a href="#" title="profile">orders</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary capitalize"><a href="#" title="my-wishlisht-single">my
+                                    wishlist
+                                    single</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="./index-shop-checkout-complete.html"
+                                    title="address">address</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="./index-shop-checkout-complete.html"
+                                    title="support-ticket">support tickets</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="#" title="about-us">about us</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="#" title="brands">brands</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="#" title="category">category</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="#" title="authenticatio">authentication</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="#" title="our-team">our
+                                    team</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="#" title="Affiliate">Affiliate</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="#" title="our-gallery">our
+                                    gallery</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="#" title="contact-us">contact us</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="./index-help.html" title="help">help</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="#" title="invoices">invoices</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="#" title="faq">faq</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="#" title="testimonials">testimonials</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li
+                    class="accountPage relative hidden lg:block lg:px-2 cursor-pointer transition-colors  duration-500 delay-300 hover:text-bs_primary">
+                    <a href="#" title="Account">Account
+                        <i class="fa-solid fa-chevron-down"></i></a>
+                    <div
+                        class="accountPageSub opacity-0 hidden shop-sub absolute top-15 -right-20 z-20 bg-bs_white rounded-xl shadow-md w-52 p-6">
+                        <ul class="pb-3 text-bs_textColor capitalize">
+                            <li class="py-2 hover:text-bs_primary"><a href="./index-help.html"
+                                    title="dashboard">dashboard</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary capitalize"><a href="#" title="profile">orders</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary capitalize"><a href="#" title="my-wishlisht-single">my
+                                    wishlist
+                                    single</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="./index-shop-checkout-complete.html"
+                                    title="address">address</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="./index-shop-checkout-complete.html"
+                                    title="support-ticket">support tickets</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="./index-shop-checkout-complete.html"
+                                    title="track-my-order">track my order</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="./index-shop-checkout-complete.html"
+                                    title="payment-method">payment methods</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="./index-shop-checkout-complete.html"
+                                    title="notification">notification</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="./index-shop-checkout-complete.html"
+                                    title="messages">messages</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="./index-shop-checkout-complete.html"
+                                    title="settings">settings</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li
+                    class="relative shopList hidden lg:block lg:px-2 cursor-pointer transition-colors duration-500 delay-300 hover:text-bs_primary">
+                    <a href="#" title="shop">Shop
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <div
+                        class="opacity-0 hidden shop-sub absolute top-5 -right-20 z-20 bg-bs_white rounded-xl shadow-md w-52 p-6">
+                        <ul class="pb-3 text-bs_textColor">
+                            <li class="py-2 hover:text-bs_primary"><a href="#" title="shop-gird-one">shop grid one</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="./index-grid-shop-2.html"
+                                    title="shop-grid-two">shop grid
+                                    two</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="#" title="shop-grid-two">checkout</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="#" title="shop-grid-two">checkout
+                                    complete</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="#" title="shop-grid-two">checkout single</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li
+                    class="blogPage relative hidden lg:block lg:px-2 cursor-pointer  transition-colors duration-500 delay-300 hover:text-bs_primary">
+                    <a href="#" title="blog">Blog
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <div
+                        class="blogPageSub opacity-0 hidden shop-sub absolute top-15 -right-20 z-20 bg-bs_white rounded-xl shadow-md w-52 p-6">
+                        <ul class="pb-3 text-bs_textColor">
+                            <li class="py-2 hover:text-bs_primary"><a href="./index-help.html" title="blog-grid">blog
+                                    grid</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="#" title="blog-grid-side-bar">blog grid side
+                                    bar</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="#" title="shop-grid-two">blog single</a>
+                            </li>
+                            <li class="py-2 hover:text-bs_primary"><a href="./index-shop-checkout-complete.html"
+                                    title="blog-single-side-bar">blog single side bar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li
+                    class="hidden lg:block lg:px-2 cursor-pointer lg:mr-8 transition-colors duration-500 delay-300 hover:text-bs_primary">
+                    <a href="#" title="contact">Contact
+                    </a>
+                </li>
+                <li class="px-2">
+                    <a href="#" title="search">
+                        <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="px-2">
+                    <a href="#" title="favourite" class="relative">
+                        <i class="fa-regular fa-heart text-bs_primary text-xl"></i>
+                        <div
+                            class="bg-bs_primary bottom-6 left-2 w-5 h-5 absolute flex justify-center items-center rounded-full">
+                            <span class="text-bs_white text-xs font-medium"> 2</span>
+                        </div>
+                </li>
+                <li class="px-2">
+                    <a href="#" title="shop-cart" class="relative">
+                        <i class="fa-solid fa-bag-shopping text-bs_primary text-xl"></i>
+                        <div
+                            class="bg-bs_primary bottom-6 left-2 w-5 h-5 absolute flex justify-center items-center rounded-full">
+                            <span class="text-bs_white text-xs font-medium">5</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="pl-2 lg:pl-2 block lg:hidden">
+                    <button type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
+                        aria-controls="drawer-navigation">
+                        <i class="fa-solid fa-bars mini-icon text-bs_primary"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <div id="drawer-navigation"
+            class="menu-burger fixed top-0 left-0 z-40 h-screen pl-4 py-4 overflow-y-auto transition-transform -translate-x-full bg-white w-[60%] "
+            tabindex="-1" aria-labelledby="drawer-navigation-label">
+            <div class="flex justify-between pr-8">
+                <img src="./src/images/logo-pink.png" id="drawer-navigation-label" class="w-24 md:w-36" alt="logo-menu">
+                </a>
+                <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation"
+                    class="font-medium text-2xl text-bs_paraGray">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <ul class="py-3 pr-8">
+                <li
+                    class="flex justify-between gap-24 mt-4 cursor-pointer transition-colors duration-500 delay-300 pb-4">
+                    <a href="./index.html" title="home">
+                        Home
+                    </a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                </li>
+                <li
+                    class="gap-24 cursor-pointer flex justify-between transition-colors mt-4 duration-500 delay-300 hover:text-bs_primary pb-4">
+                    <a href="#" title="category">All Category
+                    </a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </li>
+                <li
+                    class="mt-4 gap-24 cursor-pointer flex justify-between transition-colors duration-500 delay-300 hover:text-bs_primary pb-4">
+                    <a href="#" title="about">
+                        About
+                    </a>
+                </li>
+                <li
+                    class="flex justify-between gap-24 mt-4 cursor-pointer transition-colors duration-500 delay-300 hover:text-bs_primary pb-4">
+                    <a href="#" title="pages">Pages
+                    </a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </li>
+                <li
+                    class="mt-4 gap-24 flex justify-between cursor-pointer transition-colors  duration-500 delay-300 hover:text-bs_primary pb-4">
+                    <a href="#" title="Account">Account
+                    </a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </li>
+                <li
+                    class="mt-4 gap-24 flex justify-between cursor-pointer transition-colors duration-500 delay-300 hover:text-bs_primary pb-4">
+                    <a href="#" title="shop">Shop
+                    </a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </li>
+                <li
+                    class="mt-4 gap-24 flex justify-between cursor-pointer  transition-colors duration-500 delay-300 hover:text-bs_primary pb-4">
+                    <a href="#" title="blog">Blog
+                    </a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </li>
+                <li
+                    class="mt-4 lg:px-2 cursor-pointer lg:mr-8 transition-colors duration-500 delay-300 hover:text-bs_primary pb-4">
+                    <a href="#" title="contact">Contact
+                    </a>
+                </li>
+        </div>
+        <hr class="h-px bg-bs_border border-0">
+    </header>
+    <section>
+        <div class="breadcrumb w-full h-44 bg-center bg-cover"
+            style="background-image: url(./src/images/breadcrumb01.jpg);">
+            <div class="container breadcrumbBox py-14">
+                <h4 class="text-bs_textColor capitalize text-2xl font-bold">blog single</h4>
+                <div class="mt-2">
+                    <ul class="flex">
+                        <li class="text-bs_textColor hover:text-bs_primary transition-colors delay-150 duration-500">
+                            <i class="fa-solid fa-house"></i>
+                            <a href="./index.html" title="breadcrumb" class="capitalize">home</a>
+                        </li>
+                        <li class="px-2">
+                            <i class="fa-solid fa-angles-right text-bs_textColor"></i>
+                        </li>
+                        <li>
+                            <a href="#" title="breadcrumb" class="text-bs_primary capitalize"> blog single</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="grid grid-cols-12 my-16">
+            <div class="col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-8 md:col-start-3 px-4 sm:px-0">
+                <img src="./src/images/blogHero.jpg" alt="blog" class=" w-full rounded-lg">
+                <div class="flex items-center py-4">
+                    <i class="fa-regular fa-user text-bs_primary text-xs sm:text-base"></i>
+                    <span class="capitalize font-medium text-bs_paraGray text-xs sm:text-sm px-1 mr-3">jean r
+                        gunter</span>
+                    <i class="fa-regular fa-comments text-bs_primary text-xs sm:text-base"></i><span
+                        class="capitalize font-medium text-bs_paraGray text-xs sm:text-sm px-1 mr-3">3.2k
+                        comments</span>
+                    <i class="fa-regular fa-thumbs-up text-bs_primary text-xs sm:text-base"></i>
+                    <span class="capitalize font-medium text-bs_paraGray text-xs sm:text-sm px-1 mr-3 ">1.4k
+                        like</span>
+
+                    <div class="flex-shrink-0 sm:flex-1 sm:text-right">
+                        <i class="fa-solid fa-share-nodes text-bs_primary text-xs sm:text-base"></i>
+                        <a href="#"
+                            class="capitalize font-medium text-bs_paraGray text-xs sm:text-sm hover:text-bs_primary transition-all delay-150 duration-300 ease-in-out px-1"
+                            title="share">share</a>
+                    </div>
+                </div>
+                <h2 class="capitalize font-bold text-bs_textColor text:2xl md:text-3xl py-2">It is a long established
+                    fact that a
+                    reader
+                </h2>
+                <p class="text-bs_paraGray text-sm md:text-base md:leading-8 mt-3">Sed ut perspiciatis unde omnis iste
+                    natus
+                    error
+                    sit
+                    voluptatem
+                    accusantium
+                    doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                    dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+                    est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                <br>
+                <p class="text-bs_paraGray text-sm md:text-base md:leading-8">But I must explain to you how all this
+                    mistaken
+                    idea of denouncing pleasure and praising pain was
+                    born and I will give you a complete account of the system, and expound the actual teachings of the
+                    great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or
+                    avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue
+                    pleasure rationally encounter consequences that are extremely painful.
+                </p>
+                <div
+                    class="relative bg-bs_pink mt-8 py-6 px-10 before:block before:content('') before:w-2 before:h-full before:bg-bs_primary before:absolute before:left-0 before:top-0">
+                    <p class="text-bs_paraGray text-sm md:text-base md:leading-8 italic pb-6">It is a long established
+                        fact
+                        that a
+                        reader will be distracted by the readable content of a page
+                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                        distribution.
+                    </p>
+                    <span
+                        class="relative text-sm text-bs_textColor font-semibold italic before:block before:content('') before:w-10 before:h-[2px] before:bg-bs_primary before:absolute before:-left-06 before:top-3 ml-14">Mark
+                        Crawford</span>
+                    <i
+                        class="fa-solid fa-quote-right text-pink-300 flex justify-end items-start text-[60px] sm:text-[70px] -mt-10 sm:-mt-16"></i>
+                </div>
+                <p class="text-bs_paraGray  text-sm md:text-base md:leading-8 py-6">In a free hour when our
+                    power of choice is
+                    untrammelled and when nothing prevents our being able to
+                    do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain
+                    circumstances and owing to the claims of duty or the obligations of business it will frequently
+                    occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always
+                    holds in these matters to this principle of selection.
+
+                </p>
+                <div class="grid grid-cols-8 gap-4 md:gap-10 lg:gap-16">
+                    <img src="./src/images/blogpage01.jpg" alt="blog" class="w-[450px] rounded-lg col-span-4">
+                    <img src="./src/images/blogPage02.jpg" alt="blog" class="w-[450px] rounded-lg col-span-4">
+                </div>
+                <p class="text-bs_paraGray text-sm md:text-base md:leading-8 py-6">
+                    Power of choice is untrammelled and when nothing prevents our being able to do what we like best,
+                    every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to
+                    the claims of duty or the obligations of business it will frequently occur that pleasures have to be
+                    repudiated and annoyances accepted. The wise man therefore always holds in these matters to this
+                    principle of selection.
+
+                </p>
+                <hr class="mb-6">
+                <div class="text-bs_textColor">
+                    <span class="font-semibold">Tags :</span>
+                    <a href="./index-grid-shop-2.html" title="shop"
+                        class="capitalize text-sm  bg-bs_pink px-4 py-2 rounded-2xl mx-1 hover:bg-bs_primary hover:text-bs_white transition-all delay-150 duration-700 ease-in-out">shop</a>
+                    <a href="./index-grid-shop-2.html" title="online"
+                        class="capitalize text-sm bg-bs_pink px-4 py-2 rounded-2xl mx-1 hover:bg-bs_primary hover:text-bs_white transition-all delay-150 duration-700 ease-in-out">online</a>
+                    <a href="./index-grid-shop-2.html" title="gifts"
+                        class="capitalize text-sm bg-bs_pink px-4 py-2 rounded-2xl mx-1 hover:bg-bs_primary hover:text-bs_white transition-all delay-150 duration-700 ease-in-out">gifts</a>
+                </div>
+                <div
+                    class="md:grid md:grid-cols-9 items-center gap-4 rounded-lg shadow-md py-6 md:py-10 px-5 bg-bs_white mt-12">
+                    <img src="./src/images/blog-author.jpg"
+                        class="w-[300px] lg:w-[184px] mx-auto md:mx-0 rounded-lg md:col-span-3 lg:col-span-2"
+                        alt="blog-author">
+                    <div class="md:col-span-6 lg:col-span-7 mt-4 md:mt-0 text-center md:text-left">
+                        <span class="block capitalize text-bs_textColor font-semibold">author</span>
+                        <span class="text-bs_primary text-lg capitalize font-semibold ">Roger
+                            Duque</span>
+                        <p class="text-bs_paraGray text-base leading-8 py-2 px-4 md:px-0">
+                            It is a long established fact that a reader will be distracted by the abcd readable content
+                            of a page when long established fact that a reader looking at its that more less layout.
+
+                        </p>
+                        <div class="text-bs_primary flex gap-2 justify-center md:justify-start">
+                            <a href="#" title="facebookPage"
+                                class="w-6 h-6 md:w-8 md:h-8 hover:border-bs_primary hover:bg-bs_primary hover:text-white transition-all delay-150 duration-500 ease-in-out border-bs_primary rounded-full flex justify-center items-center border-[2px]">
+                                <i class="fa-brands fa-facebook-f text-xs md:text-base"></i>
+                            </a>
+                            <a href="#" title="twitterPage"
+                                class="w-6 h-6 md:w-8 md:h-8 hover:border-bs_primary hover:bg-bs_primary hover:text-white transition-all delay-150 duration-500 ease-in-out border-bs_primary rounded-full flex justify-center items-center border-[2px]">
+                                <i class="fa-brands fa-x-twitter text-xs md:text-base"></i>
+                            </a>
+                            <a href="#" title="instagramPage"
+                                class="w-6 h-6 md:w-8 md:h-8 hover:border-bs_primary hover:bg-bs_primary hover:text-white transition-all delay-150 duration-500 ease-in-out border-bs_primary rounded-full flex justify-center items-center border-[2px]">
+                                <i class="fa-brands fa-instagram text-xs md:text-base"></i>
+                            </a>
+                            <a href="#" title="whatsappPage"
+                                class="w-6 h-6 md:w-8 md:h-8 hover:border-bs_primary hover:bg-bs_primary hover:text-white transition-all delay-150 duration-500 ease-in-out border-bs_primary rounded-full flex justify-center items-center border-[2px]">
+                                <i class="fa-brands fa-whatsapp text-xs md:text-base"></i>
+                            </a>
+                            <a href="#" title="youtubePage"
+                                class="w-6 h-6 md:w-8 md:h-8 hover:border-bs_primary hover:bg-bs_primary hover:text-white transition-all delay-150 duration-500 ease-in-out border-bs_primary rounded-full flex justify-center items-center border-[2px]">
+                                <i class="fa-brands fa-youtube text-xs md:text-base"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <h4 class="text-bs_textColor capitalize text-xl md:text-3xl mt-14 mb-8 font-semibold">comments (20)</h4>
+
+                <div class="flex gap-4">
+                    <div class="commentPic w-[140px]">
+                        <img src="./src/images/testi03.jpg" alt="comment" class="rounded-full">
+                    </div>
+                    <div>
+                        <span class="block capitalize text-bs_textColor font-semibold ">Sinkler Jesse</span>
+                        <i class="fa-regular fa-clock text-sm text-bs_primary"></i><span
+                            class="capitalize text-bs_primary text-sm mx-1">August 20,
+                            2024</span>
+                        <p class="text-bs_paraGray text-sm md:text-base md:leading-8 py-1">There are many variations of
+                            passages the majority have suffered in some injected humour or
+                            randomised words which don't look even long established fact that a reader slightly
+                            believable.
+                        </p>
+                        <a href="#"
+                            class="hover:text-bs_textColor transition-all delay-150 duration-700 ease-in-out text-bs_primary text-sm">
+                            <i class="fa-solid fa-reply"></i><span class="capitalize mx-1">reply</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex gap-4 mt-10 ml-10">
+                    <div class="commentPic w-[140px]">
+                        <img src="./src/images/testi01.jpg" alt="comment" class="rounded-full">
+                    </div>
+                    <div>
+                        <span class="block capitalize text-bs_textColor font-semibold ">Sinkler Jesse</span>
+                        <i class="fa-regular fa-clock text-sm text-bs_primary"></i><span
+                            class="capitalize text-bs_primary text-sm mx-1">August 20,
+                            2024</span>
+                        <p class="text-bs_paraGray text-sm md:text-base md:leading-8 py-1">There are many variations of
+                            passages the majority have suffered in some injected humour or
+                            randomised words which don't look even long established fact that a reader slightly
+                            believable.
+                        </p>
+                        <a href="#"
+                            class="hover:text-bs_textColor transition-all delay-150 duration-700 ease-in-out text-bs_primary text-sm">
+                            <i class="fa-solid fa-reply"></i><span class="capitalize mx-1">reply</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex gap-4 mt-10">
+                    <div class="commentPic w-[140px]">
+                        <img src="./src/images/testi02.jpg" alt="comment" class="rounded-full">
+                    </div>
+                    <div>
+                        <span class="block capitalize text-bs_textColor font-semibold ">Kenneth Evans</span>
+                        <i class="fa-regular fa-clock text-sm text-bs_primary"></i><span
+                            class="capitalize text-bs_primary text-sm mx-1">August 20, 2024</span>
+                        <p class="text-bs_paraGray text-sm md:text-base md:leading-8 py-1">There are many variations of
+                            passages the majority have suffered in some injected humour or
+                            randomised words which don't look even long established fact that a reader slightly
+                            believable.
+                        </p>
+                        <a href="#"
+                            class="hover:text-bs_textColor transition-all delay-150 duration-700 ease-in-out text-bs_primary text-sm">
+                            <i class="fa-solid fa-reply"></i><span class="capitalize mx-1">reply</span>
+                        </a>
+                    </div>
+                </div>
+                <form action="#" class="bg-bs_pink py-10 px-8 mt-16 rounded-lg mb-10">
+                    <h4 class="text-bs_textColor capitalize text-xl md:text-3xl mb-8 font-semibold">Leave A
+                        Comment</h4>
+                    <div class="grid grid-cols-10 md:gap-8">
+                        <input type="text" id="first_name"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-bs_primary focus:border-bs_primary block py-4 px-3 col-span-10 md:col-span-5"
+                            placeholder="Your Name *" required />
+                        <input type="email" id="email-address"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-bs_primary focus:border-bs_primary block py-4 px-3 col-span-10 md:col-span-5 mt-6 md:mt-0"
+                            placeholder="Your Email *" required />
+                    </div>
+                    <textarea type="text" id="large-input" rows="4"
+                        class="block w-full p-4 text-bs_textColor border border-gray-300 rounded-lg bg-gray-50 text-base focus:ring-bs_primary focus:border-bs_primary mt-6 mb-10"
+                        placeholder="Your Comment*"></textarea>
+                    <a href="#" title="postComment"
+                        class="bg-bs_primary text-bs_white p-4 rounded-xl hover:bg-bs_textColor transition-all delay-150 duration-700 ease-in-out">
+                        <span class="capitalize text-sm md:text-base">post
+                            a commnet</span> <i class="fa-regular fa-paper-plane mx-1"></i>
+                    </a>
+
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class=" text-bs_white mt-26">
+        <div style="background-image: url('./src/images/footerBg.png');" class="w-full h-auto bg-cover bg-center">
+            <div class="container py-16">
+                <div class="grid grid-cols-6 sm:grid-cols-7 gap-4 justify-between md:gap-10 lg:gap-2 xl:gap-8">
+                    <div class="col-span-4 sm:col-span-3 md:col-span-3 lg:col-span-2 mb-6">
+                        <img src="./src/images/logo-d2d0b6a6.webp" class="w-[150px] md:w-[170px]" alt="logo">
+                        <p class="mt-6 pr-8 leading-8">
+                            We are many variations of the passages available but the majoro have suffered
+                            alteration
+                            injected.
+                        </p>
+                        <div class="flex flex-col gap-2 mt-6">
+                            <a href="#" title="phone">
+                                <i class="fa-solid fa-phone bg-bs_primary p-2 mr-2 rounded-full"></i>
+                                <span class="text-sm md:text-base">+2 123 654 7898</span>
+                            </a>
+                            <a href="#" title="location" class="mt-2">
+                                <i class="fa-solid fa-map-pin bg-bs_primary py-2 px-3 mr-2 rounded-full"></i>
+                                <span class="text-sm md:text-base">
+                                    25/B Milford Road, New York
+                                </span>
+                            </a>
+                            <a href="#" title="email" class="mt-2">
+                                <i class="fa-regular fa-envelope bg-bs_primary py-2 px-2 mr-2 rounded-full"></i>
+                                <span class="text-sm md:text-base">
+                                    info@example.com
+                                </span>
+                            </a>
+                            <a href="#" title="worktime" class="mt-2">
+                                <i class="fa-regular fa-clock bg-bs_primary py-2 px-2 mr-2 rounded-full">
+                                </i>
+                                <span class="text-sm md:text-base">
+                                    Mon-Fri (9.00AM - 8.00PM)
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-span-2 sm:col-span-2 md:col-span-2 lg:col-span-1 relative">
+                        <span
+                            class="md:text-base lg:font-semibold after:block after:content[('')] after:absolute after:bg-bs_primary after:h-[2px] after:w-[10px] after:mt-2  after:rounded-full before:block before:content[('')] before:absolute before:bg-bs_paraGray before:h-[2px] before:w-[30px] before:top-8 before:left-[16px] before:rounded-full">Quick
+                            Links</span>
+                        <ul class="mt-4">
+                            <li class="text:xs md:text-sm py-3 hover:text-bs_primary duration-500 delay-150"><a href="#"
+                                    title="footer-links">About Us</a></li>
+                            <li class="text:xs md:text-sm py-3 hover:text-bs_primary duration-500 delay-150"><a href="#"
+                                    title="footer-links">Delivery Info</a></li>
+                            <li class="text:xs md:text-sm py-3 hover:text-bs_primary duration-500 delay-150"><a href="#"
+                                    title="footer-links">Contact Us</a></li>
+                            <li class="text:xs md:text-sm py-3 hover:text-bs_primary duration-500 delay-150"><a href="#"
+                                    title="footer-links">Update News</a></li>
+                            <li class="text:xs md:text-sm py-3 hover:text-bs_primary duration-500 delay-150"><a href="#"
+                                    title="footer-links">Our Testimonials</a></li>
+                            <li class="text:xs md:text-sm py-3 hover:text-bs_primary duration-500 delay-150"><a href="#"
+                                    title="footer-links">
+                                    Terms Of Service</a></li>
+                            <li class="text:xs md:text-sm py-3 hover:text-bs_primary duration-500 delay-150"><a href="#"
+                                    title="footer-links">Privacy policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-span-3 sm:col-span-2 md:col-span-2 lg:col-span-1 relative">
+                        <span
+                            class="text:xs md:text-base lg:font-semibold after:block after:content[('')] after:absolute after:bg-bs_primary after:h-[2px] after:w-[10px] after:mt-2  after:rounded-full before:block before:content[('')] before:absolute before:bg-bs_paraGray before:h-[2px] before:w-[30px] before:top-8 before:left-[16px] before:rounded-full">Browse
+                            Category</span>
+                        <ul>
+                            <li class="text:xs md:text-sm py-3 hover:text-bs_primary duration-500 delay-150"><a href="#"
+                                    title="footer-links">Home & Living</a></li>
+                            <li class="text:xs md:text-sm py-3 hover:text-bs_primary duration-500 delay-150"><a href="#"
+                                    title="footer-links">Garment Care</a></li>
+                            <li class="text:xs md:text-sm py-3 hover:text-bs_primary duration-500 delay-150"><a href="#"
+                                    title="footer-links">Jewelry & Accessories</a></li>
+                            <li class="text:xs md:text-sm py-3 hover:text-bs_primary duration-500 delay-150"><a href="#"
+                                    title="footer-links">Occasion Gifts</a></li>
+                            <li class="text:xs md:text-sm py-3 hover:text-bs_primary duration-500 delay-150"><a href="#"
+                                    title="footer-links">
+                                    Office & Stationery</a></li>
+                            <li class="text:xs md:text-sm py-3 hover:text-bs_primary duration-500 delay-150"><a href="#"
+                                    title="footer-links">
+                                    Personalised Gifts</a></li>
+                            <li class="text:xs md:text-sm py-3 hover:text-bs_primary duration-500 delay-150"><a href="#"
+                                    title="footer-links">Gifts Box</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-span-3 sm:col-span-2 md:col-span-3 lg:col-span-1 relative">
+                        <span
+                            class="text:xs md:text-base lg:font-semibold after:block after:content[('')] after:absolute after:bg-bs_primary after:h-[2px] after:w-[10px] after:mt-2  after:rounded-full before:block before:content[('')] before:absolute before:bg-bs_paraGray before:h-[2px] before:w-[30px] before:top-8 before:left-[16px] before:rounded-full">Support
+                            Center</span>
+                        <ul>
+                            <li class="text:xs md:text-sm py-3 hover:text-bs_primary duration-500 delay-150"><a href="#"
+                                    title="footer-links">FAQ's</a></li>
+                            <li class="text:xs md:text-sm py-3 hover:text-bs_primary duration-500 delay-150"><a href="#"
+                                    title="footer-links">How To Buy</a></li>
+                            <li class="text:xs md:text-sm py-3 hover:text-bs_primary duration-500 delay-150"><a href="#"
+                                    title="footer-links">Support Center</a></li>
+                            <li class="text:xs md:text-sm py-3 hover:text-bs_primary duration-500 delay-150"><a href="#"
+                                    title="footer-links">Track Your Order</a></li>
+                            <li class="text:xs md:text-sm py-3 hover:text-bs_primary duration-500 delay-150"><a href="#"
+                                    title="footer-links">Returns Policy</a></li>
+                            <li class="text:xs md:text-sm py-3 hover:text-bs_primary duration-500 delay-150"><a href="#"
+                                    title="footer-links">
+                                    Our Affiliates</a></li>
+                            <li class="text:xs md:text-sm py-3 hover:text-bs_primary duration-500 delay-150"><a href="#"
+                                    title="footer-links">Site Map</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-span-6 sm:col-span-3 md:col-span-3 lg:col-span-2 relative">
+                        <span
+                            class="text:xs md:text-base lg:font-semibold after:block after:content[('')] after:absolute after:bg-bs_primary after:h-[2px] after:w-[10px] after:mt-2  after:rounded-full before:block before:content[('')] before:absolute before:bg-bs_paraGray before:h-[2px] before:w-[30px] before:top-8 before:left-[16px] before:rounded-full">Get
+                            Mobile App</span>
+                        <p class="text:sm md:text-base my-4">Gifoy App is now available on App Store & Google
+                            Play.
+                        </p>
+                        <h6 class="text:sm md:text-base lg:font-semibold mb-2">download our mobile app</h6>
+                        <div class="my-2 flex items-center gap-2 mb-4">
+                            <a href="#" title="googlePlay" class="flex items-center bg-bs_primary rounded-lg  p-1">
+                                <i class="fa-brands fa-google-play text-3xl"></i>
+                                <div class="px-2">
+                                    <span class="capitalize font-semibold text-xs">get it on</span>
+                                    <br>
+                                    <span class="capitalize text-sm font-semibold">google play</span>
+                                </div>
+                            </a>
+                            <a href="#" title="AppStore" class="flex items-center bg-bs_primary rounded-lg  py-1 px-2">
+                                <i class="fa-brands fa-app-store text-3xl"></i>
+                                <div class="px-2">
+                                    <span class="capitalize font-semibold text-xs">get it on</span>
+                                    <br>
+                                    <span class="capitalize text-sm font-semibold">App store</span>
+                                </div>
+                            </a>
+                        </div>
+                        <span class="text:xs md:text-base lg:font-semibold ">We Accept:</span>
+                        <div class="flex flex-wrpa gap-2 my-2">
+                            <img class="w-10" src="./src/images/visa.svg" alt="visa-card">
+                            <img class="w-10" src="./src/images/mastercard.svg" alt="mastercard">
+                            <img class="w-10" src="./src/images/amex.svg" alt="amex">
+                            <img class="w-10" src="./src/images/discover.svg" alt="discover">
+                            <img class="w-10" src="./src/images/paypal.svg" alt="paypal">
+                        </div>
+                    </div>
+                </div>
+                <hr class="h-px bg-bs_paraGray border-0 mt-10 mb-6">
+                <div class="copyRight flex justify-between items-center gap-4">
+                    <p class="text-xs md:text-sm">© Copyright 2025 Gifoy All Rights Reserved.</p>
+                    <div class="socialMedia flex items-center">
+                        <span class="capitalize text-sm md:text-sm">follow us</span>
+                        <a href="#" title="facebook-icon"
+                            class="bg-bs_paraGray rounded-full mx-1 w-8 h-8 flex items-center justify-center">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" title="twitter-icon"
+                            class="bg-bs_paraGray rounded-full mx-1 w-8 h-8 flex items-center justify-center">
+                            <i class=" fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" title="linkedin-icon"
+                            class="bg-bs_paraGray rounded-full w-8 h-8 flex items-center justify-center mx-1">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" title="youtube-icon"
+                            class="bg-bs_paraGray rounded-full w-8 h-8 flex items-center justify-center ml-1">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#top"
+        class="fixed bottom-24 right-14 bg-bs_primary rounded-full shadow-md w-10 h-10 md:w-12 md:h-12 flex items-center justify-center hover:bg-bs_textColor transition-colors duration-500 ease-in-out">
+        <i class="fa-solid fa-arrow-up-from-bracket text-bs_white text-lg"></i>
+    </a> -->
+
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>

@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" /> -->
   <link rel="stylesheet" href="./src/index.css">
+
   <title>Kadooyab Landing Page</title>
 </head>
 
@@ -70,7 +72,7 @@
         </li>
         <li class="hidden md:block md:mx-1 lg:mx-2">
           <a href="#" title="twitter-icon mini-icon">
-            <i class=" fa-brands fa-x-twitter"></i>
+            <i class=" fa-brands fa-x-twitter text-bs_primary"></i>
           </a>
         </li>
         <li class="hidden md:block md:ml-1 lg:ml-2">
@@ -112,27 +114,121 @@
           </a>
         </li>
         <li
-          class="hidden lg:block lg:px-2 cursor-pointer transition-colors duration-500 delay-300 hover:text-bs_primary">
+          class="relative pagesPage hidden lg:block lg:px-2 cursor-pointer transition-colors duration-500 delay-300 hover:text-bs_primary">
           <a href="#" title="pages">Pages
             <i class="fa-solid fa-chevron-down"></i>
           </a>
+          <div
+            class="pagesPageSub opacity-0 hidden shop-sub absolute top-15 -right-20 z-20 bg-bs_white rounded-xl shadow-md w-52 p-6">
+            <ul class="pb-3 text-bs_textColor capitalize">
+              <li class="py-2 hover:text-bs_primary"><a href="#" title="about-us">about us</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="#" title="brands">brands</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="#" title="category">category</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="#" title="authenticatio">authentication</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="#" title="our-team">our
+                  team</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="#" title="Affiliate">Affiliate</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="#" title="our-gallery">our
+                  gallery</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="#" title="contact-us">contact us</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="./index-help.html" title="help">help</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="#" title="invoices">invoices</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="#" title="faq">faq</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="#" title="testimonials">testimonials</a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li
-          class="hidden lg:block lg:px-2 cursor-pointer transition-colors  duration-500 delay-300 hover:text-bs_primary">
+          class="accountPage relative hidden lg:block lg:px-2 cursor-pointer transition-colors  duration-500 delay-300 hover:text-bs_primary">
           <a href="#" title="Account">Account
             <i class="fa-solid fa-chevron-down"></i></a>
+          <div
+            class="accountPageSub opacity-0 hidden shop-sub absolute top-15 -right-20 z-20 bg-bs_white rounded-xl shadow-md w-52 p-6">
+            <ul class="pb-3 text-bs_textColor capitalize">
+              <li class="py-2 hover:text-bs_primary"><a href="#" title="dashboard">dashboard</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary capitalize"><a href="#" title="profile">orders</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary capitalize"><a href="#" title="my-wishlisht-single">my wishlist
+                  single</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="#l" title="address">address</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="#" title="support-ticket">support tickets</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="#" title="track-my-order">track my order</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="#" title="payment-method">payment methods</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="#" title="notification">notification</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="#" title="messages">messages</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="#" title="settings">settings</a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li
-          class="hidden lg:block lg:px-2 cursor-pointer  transition-colors duration-500 delay-300 hover:text-bs_primary">
+          class="relative shopList hidden lg:block lg:px-2 cursor-pointer transition-colors duration-500 delay-300 hover:text-bs_primary">
           <a href="#" title="shop">Shop
             <i class="fa-solid fa-chevron-down"></i>
           </a>
+          <div
+            class="opacity-0 hidden shop-sub absolute top-5 -right-20 z-20 bg-bs_white rounded-xl shadow-md w-52 p-6">
+            <ul class="pb-3 text-bs_textColor">
+              <li class="py-2 hover:text-bs_primary"><a href="#" title="shop-gird-one">shop grid one</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="./index-grid-shop-2.html" title="shop-grid-two">shop grid
+                  two</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="#" title="shop-grid-two">checkout</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="./index-cart.html" title="shop-cart">shop cart</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="./index-singl-shop.html" title="shop-single">shop
+                  single</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="./index-shop-checkout-complete.html"
+                  title="shop-checkout-complete">checkout complete</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="./index-shop-checkout.html"
+                  title="shop-checkout-single">checkout
+                  single</a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li
-          class="hidden lg:block lg:px-2 cursor-pointer  transition-colors duration-500 delay-300 hover:text-bs_primary">
+          class="blogPage relative hidden lg:block lg:px-2 cursor-pointer  transition-colors duration-500 delay-300 hover:text-bs_primary">
           <a href="#" title="blog">Blog
             <i class="fa-solid fa-chevron-down"></i>
           </a>
+          <div
+            class="blogPageSub opacity-0 hidden shop-sub absolute top-15 -right-20 z-20 bg-bs_white rounded-xl shadow-md w-52 p-6">
+            <ul class="pb-3 text-bs_textColor">
+              <li class="py-2 hover:text-bs_primary"><a href="./index-help.html" title="blog-grid">blog grid</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="#" title="blog-grid-side-bar">blog grid side bar</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="./index-blog.html" title="shop-grid-two">blog single</a>
+              </li>
+              <li class="py-2 hover:text-bs_primary"><a href="#" title="blog-single-side-bar">blog single side bar</a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li
           class="hidden lg:block lg:px-2 cursor-pointer lg:mr-8 transition-colors duration-500 delay-300 hover:text-bs_primary">
@@ -169,6 +265,7 @@
           </button>
         </li>
       </ul>
+
     </nav>
     <div id="drawer-navigation"
       class="menu-burger fixed top-0 left-0 z-40 h-screen pl-4 py-4 overflow-y-auto transition-transform -translate-x-full bg-white w-[60%] "
@@ -182,7 +279,7 @@
         </button>
       </div>
       <ul class="py-3 pr-8">
-        <li class="flex justify-between gap-24 mt-4 cursor-pointer transition-colors duration-500 delay-300  pb-4">
+        <li class="flex justify-between gap-24 mt-4 cursor-pointer transition-colors duration-500 delay-300 pb-4">
           <a href="#" title="home">
             Home
           </a>
@@ -201,29 +298,130 @@
             About
           </a>
         </li>
-        <li
-          class="flex justify-between gap-24 mt-4 cursor-pointer transition-colors duration-500 delay-300 hover:text-bs_primary pb-4">
-          <a href="#" title="pages">Pages
-          </a>
-          <i class="fa-solid fa-chevron-down"></i>
+        <li class="mt-4 cursor-pointer transition-colors duration-500 delay-300 hover:text-bs_primary pb-4">
+          <button type="button"
+            class="flex justify-between gap-24 items-center w-full transition duration-75 rounded-lg group"
+            aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+            <a href="#" title="pages">
+              Pages
+            </a>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <ul id="dropdown-example" class="hidden space-y-2 mt-4 pb-3 px-2 text-bs_textColor capitaliz">
+            <li class="py-2 hover:text-bs_primary"><a href="./index-help.html" title="about-us">about us</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary capitalize"><a href="#" title="brands">brands</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary capitalize"><a href="#" title="category">category</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="#" title="extra-pages">extra pages</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="#" title="brands">brands</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="#" title="category">category</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="#" title="authenticatio">authentication</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="#" title="our-team">our
+                team</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="#" title="Affiliate">Affiliate</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="#" title="our-gallery">our
+                gallery</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="#" title="contact-us">contact us</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="./index-help.html" title="help">help</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="#" title="invoices">invoices</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="#" title="faq">faq</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="#" title="testimonials">testimonials</a>
+            </li>
+          </ul>
         </li>
-        <li
-          class="mt-4 gap-24 flex justify-between cursor-pointer transition-colors  duration-500 delay-300 hover:text-bs_primary pb-4">
-          <a href="#" title="Account">Account
-          </a>
-          <i class="fa-solid fa-chevron-down"></i>
+        <li class="mt-4 cursor-pointer transition-colors duration-500 delay-300 hover:text-bs_primary pb-4">
+          <button type="button"
+            class="flex justify-between gap-24 items-center w-full transition duration-75 rounded-lg group"
+            aria-controls="dropdown-account" data-collapse-toggle="dropdown-account">
+            <a href="#" title="Account">Account
+            </a>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <ul id="dropdown-account" class="hidden space-y-2 mt-4 pb-3 px-2 text-bs_textColor capitaliz">
+            <li class="py-2 hover:text-bs_primary"><a href="#" title="dashboard">dashboard</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary capitalize"><a href="#" title="profile">orders</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary capitalize"><a href="#" title="my-wishlisht-single">my wishlist
+                single</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="#" title="address">address</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="#" title="support-ticket">support tickets</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="#" title="track-my-order">track my order</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="#" title="payment-method">payment methods</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="./index-shop-checkout-complete.html"
+                title="notification">notification</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="#" title="messages">messages</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="#" title="settings">settings</a>
+            </li>
+          </ul>
         </li>
-        <li
-          class="mt-4 gap-24 flex justify-between cursor-pointer transition-colors duration-500 delay-300 hover:text-bs_primary pb-4">
-          <a href="#" title="shop">Shop
-          </a>
-          <i class="fa-solid fa-chevron-down"></i>
+        <li class="mt-4 cursor-pointer transition-colors duration-500 delay-300 hover:text-bs_primary pb-4">
+          <button type="button"
+            class="flex justify-between gap-24 items-center w-full transition duration-75 rounded-lg group"
+            aria-controls="dropdown-shop" data-collapse-toggle="dropdown-shop">
+            <a href="#" title="shop">Shop
+            </a>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <ul id="dropdown-shop" class="hidden space-y-2 mt-4 pb-3 px-2 text-bs_textColor capitaliz">
+            <li class="py-2 hover:text-bs_primary"><a href="#" title="shop-gird-one">shop grid one</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="./index-grid-shop-2.html" title="shop-grid-two">shop grid
+                two</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="./index-cart.html" title="shop cart">shop cart</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="#" title="shop-single">shop single</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="#" title="shop-grid-two">checkout</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="./index-shop-checkout-complete.html"
+                title="shop-checkout-complete">checkout complete</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="./index-shop-checkout.html"
+                title="shop-checkout-single">checkout
+                single</a>
+            </li>
+          </ul>
         </li>
-        <li
-          class="mt-4 gap-24 flex justify-between cursor-pointer  transition-colors duration-500 delay-300 hover:text-bs_primary pb-4">
-          <a href="#" title="blog">Blog
-          </a>
-          <i class="fa-solid fa-chevron-down"></i>
+        <li class="mt-4 cursor-pointer transition-colors duration-500 delay-300 hover:text-bs_primary pb-4">
+          <button type="button"
+            class="flex justify-between gap-24 items-center w-full transition duration-75 rounded-lg group"
+            aria-controls="dropdown-blog" data-collapse-toggle="dropdown-blog">
+            <a href="#" title="blog">Blog
+            </a>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <ul id="dropdown-blog" class="hidden space-y-2 mt-4 pb-3 px-2 text-bs_textColor capitaliz">
+            <li class="py-2 hover:text-bs_primary"><a href="./index-help.html" title="blog-grid">blog grid</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="#" title="blog-grid-side-bar">blog grid side bar</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="./index-blog.html" title="shop-grid-two">blog single</a>
+            </li>
+            <li class="py-2 hover:text-bs_primary"><a href="#" title="blog-single-side-bar">blog single side bar</a>
+            </li>
+          </ul>
         </li>
         <li
           class="mt-4 lg:px-2 cursor-pointer lg:mr-8 transition-colors duration-500 delay-300 hover:text-bs_primary pb-4">
@@ -1976,5 +2174,6 @@
 
   <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
+
 
 </html>
